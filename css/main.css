@@ -1,0 +1,507 @@
+/*-----------------------------------
+            Colors Used
+-----------------------------------
+#27597a
+#fffec9
+
+*/
+
+/*-----------------------------------
+            Global 
+-----------------------------------*/
+*{
+    font-family: Raleway, sans-serif;
+/*    border-radius : 2px !important;f*/
+    box-sizing: border-box;
+}
+
+.right{
+    float: right;
+}
+
+/*-----------------------------------
+    Navbar Transparency and Border
+-----------------------------------*/
+.navbar{
+    background-color: transparent;
+    border-bottom: 0.1em solid white;
+    -webkit-transition: 0.5s;
+    transition-property:all;
+}
+
+/*-----------------------------------
+            Navbar Color
+-----------------------------------*/
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover{
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:focus{
+    color: white;
+}
+
+
+/*-----------------------------------
+                #Logo
+-----------------------------------*/
+#logo{
+    font-size:28px;
+    margin: 15px;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/*-----------------------------------
+            Navbar Menu
+-----------------------------------*/
+.nav-menu-child{
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    font-weight: bolder;
+}
+
+
+
+
+
+/*-----------------------------------
+       Making Carousel Relative
+-----------------------------------*/
+#imageCarousel{
+    position: relative; /* To make the carousel-heading absolute */
+}
+
+/*-----------------------------------
+        Text Over Slides
+-----------------------------------*/
+.carousel-heading{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: white;
+}
+
+.carousel-heading span{
+    font-size: 70px;
+    font-weight: 900;
+    top: 30%;
+    text-transform: uppercase;
+    left: 5%;
+    line-height: 1.5;
+}
+.carousel-heading p{
+    font-size:15px;
+/*    text-transform: uppercase;*/
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-----------------------------------
+        Making Full Screen Slides
+-----------------------------------*/
+.full-screen{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*-----------------------------------
+           Explore Button
+-----------------------------------*/
+.mybtn{
+    background-color: transparent;
+    margin-top: 2%;
+    font-family:sans-serif;
+    border: 1px solid white;
+    color: white;
+    font-weight: 600;
+    padding: 15px 30px;
+    font-size: 12px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    -webkit-transition: background 0.3s, color 0.3s;
+/*    transform:background 0s, color 0s;*/
+}
+
+.mybtn:hover{
+    background: white;
+    color: #666 !important;
+}
+
+/*-----------------------------------
+        Class Margin 
+-----------------------------------*/
+.marginbottom30{
+    margin-bottom: 30px;
+}
+
+.marginbottom3{
+    margin-bottom: 3em;
+}
+
+.margintop5{
+    margin-top: 5em;
+}
+
+.marginbottom5{
+    margin-bottom: 5em;
+}
+
+.margin80px{
+    margin-top: 85px;
+}
+
+/*-----------------------------------
+            Services
+-----------------------------------*/
+
+.service-card{
+    margin-bottom: 3em;
+    position: relative; /* To make the service cards lift up */
+    padding: 20px;
+    -webkit-transition: 0.5s;
+    bottom: 0px;
+
+}
+
+.title h1{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.card-header img{
+    width: 35%;
+    margin-bottom: 2em;
+}
+
+.card-content h3{
+    font-size: 21px;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.service-card:hover{
+    background: #fffec9;
+    bottom:10px;
+    color: #27597a;
+    box-shadow:0px 18px 71px -10px #aaa;
+    -webkit-transition: 0.3s;
+}
+
+.row2 .service-card{
+    margin-bottom: 0px;
+}
+
+
+
+.inner-container{
+    max-width: 80%;
+}
+
+/*-----------------------------------
+            Portfolio
+-----------------------------------*/
+
+.wagwep-container ul#portfolio-filter li{
+    padding: 2px;
+}
+
+#elastic_grid .wagwep-container ul#portfolio-filter a{
+    margin: 1px;
+    border: 1px solid #333;
+    padding: 6px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 0px !important;
+    color: #27597a;
+}
+
+.wagwep-container ul#portfolio-filter li.current a{
+    transition:background 0.5s;
+    color: white !important;
+    background: #333;
+}
+
+ #elastic_grid ul#portfolio-filter a:hover{
+    color: white;
+     background: #27597a;
+     transition: all;
+     transition: 0.2s;
+         
+}
+
+.wagwep-container ul#portfolio-filter, .nav-tabs{
+    border-bottom: none;
+}
+
+.og-expander-inner .og-details p{
+    padding: 0px;
+}
+
+#elastic_grid .og-grid li{
+    display: inline-block;
+    margin: 20px;
+}
+
+#elastic_grid .elastislide-carousel .elastislide-list li{
+    margin: 0px;
+}
+
+.og-grid li>a img, .og-grid li>a{
+    display: block;
+}
+
+.og-grid li>a img{
+    border: 0;
+    outline: 0;
+    position: relative;
+    display: block;
+}
+
+#porfolio-nav #portfolio-filter{
+    text-align: center !important;
+}
+
+#porfolio-nav #portfolio-filter li{
+    float: none;
+    display: inline-block;
+
+}
+
+.elastislide-horizontal ul{
+    max-height: 120px;
+}
+
+/*-----------------------------------
+            Testimonial
+-----------------------------------*/
+
+#testimonials .container-fluid{
+    padding:0px;
+}
+
+
+#testimonials .shadow-effect {
+		    background: #fffec9;
+		    padding: 20px;
+            color: #27597a;
+		    border-radius: 4px;
+		    text-align: center;
+            min-height: 240px;     
+            border:1px solid #ECECEC;
+		    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+}
+#testimonials #customers-testimonials .shadow-effect p {
+		    font-family: inherit;
+		    font-size: 17px;
+		    line-height: 1.5;
+		    margin: 0 0 17px 0;
+		    font-weight: 300;
+}
+#testimonials .testimonial-name {
+		    margin: -17px auto 0;
+		    display: table;
+		    width: auto;
+            font-weight: 900;
+		    background: #27597a;
+		    padding: 9px 35px;
+		    border-radius: 2px;
+		    text-align: center;
+		    color: #fff;
+		    box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+}
+#testimonials #customers-testimonials .item {
+		    text-align: center;
+		    padding: 0px;
+            margin-bottom:80px;
+		    opacity: .2;
+		    -webkit-transform: scale3d(0.8, 0.8, 1);
+		    transform: scale3d(0.8, 0.8, 1);
+		    -webkit-transition: all 0.3s ease-in-out;
+		    -moz-transition: all 0.3s ease-in-out;
+		    transition: all 0.3s ease-in-out;
+}
+#testimonials #customers-testimonials .owl-item.active.center .item {
+		    opacity: 1;
+		    -webkit-transform: scale3d(1.0, 1.0, 1);
+		    transform: scale3d(1.0, 1.0, 1);
+}
+#testimonials .owl-carousel .owl-item img {
+		    transform-style: preserve-3d;
+		    max-width: 90px;
+    		margin: 0 auto 17px;
+}
+#testimonials #customers-testimonials.owl-carousel.owl-theme .owl-dots .owl-dot.active span, #customers-testimonials.owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+		    background: #28CB75;
+		    transform: translate3d(0px, -50%, 0px) scale(0.7);
+		}
+#testimonials #customers-testimonials.owl-carousel.owl-theme .owl-dots .owl-dot span {
+		    background: #C4C4CC;
+		    display: block;
+		    height: 20px;
+		    margin: 0 2px 5px;
+		    transform: translate3d(0px, -50%, 0px) scale(0.3);
+		    transform-origin: 50% 50% 0;
+		    transition: all 250ms ease-out 0s;
+		    width: 20px;
+}
+
+/*-------------------------
+  Removing Padding from ul
+--------------------------*/
+
+#portfolio .filter-section ul{
+    padding: 0px;
+}
+
+/*-----------------------------------
+            Clients
+-----------------------------------*/
+#ourClients .owl-carousel .owl-item img{
+    max-width: 50%;
+    margin:0px auto ;
+}
+
+#clients{
+    padding: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+
+/*-----------------------------------
+            Contact
+-----------------------------------*/
+
+#contact{
+    background: #333;
+    color: white;
+}
+
+#contact .form-group input, #contact .form-group textarea{
+    border: 0.01em solid #777;
+    border-top: 0.01em solid #777 !important;
+    border-radius: 0px !important;
+}
+
+#contact .form-group input:focus{
+/*    background: #27597a;*/
+    box-shadow: none;
+}
+
+#contact input:focus::-webkit-input-placeholder {
+}
+
+#contact textarea:focus{
+    box-shadow: none;
+}
+
+#contact input[type="button"]{
+    display: inline-block;
+}
+
+.map iframe{
+    width: 100%;
+    min-height: 363px;
+}
+
+.getInTouch p{
+    margin: 2.4em 2px;
+}
+
+.getInTouch span{
+    font-family: Arial ,sans-serif;
+}
+
+#contact a{
+    color: white;
+}
+
+.getInTouch h3{
+    font-weight: 800;
+}
+/*-----------------------------------
+                Footer
+-----------------------------------*/
+
+footer{
+    background: #27597a;
+    color: white;
+    position: relative;
+}
+
+/* Copyright */
+footer p{
+    margin: 0px;
+    padding: 6px;
+}
+
+/* Icons */
+footer .icon{
+    display: inline-block;
+    background: white;
+    color: #333;
+    width: 35px;
+    height: 32px;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.icons{
+    float: right;
+    padding-bottom: 4px;
+}
+
+
+/*-------------------------
+        Media Queries
+--------------------------*/
+
+@media (max-height:992px){
+    
+    .nav-menu-child{
+        padding:15px 5px;
+    }
+    
+    .nav-menu-child a{
+        padding:15px 5px;
+    }
+    
+    .pageScrolled .navbar{
+    background: #fff !important;
+    border-bottom-color: #f0f0f0;
+    transition-duration: 300ms;
+    transition-property: all;
+/*    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);                */
+}
+    .pageScrolled .navbar-default .navbar-nav>li>a{
+        color: #515769;
+    }
+    
+    .pageScrolled .navbar-default .navbar-brand{
+        color: #515769;
+    }
+        
+    
+}
+
+@media (max-width:992px){
+    #contact .col-md-4 {
+        margin: 20px;
+    }
+}
+
+@media (max-width:768px){
+    .mix-inner img{
+        width: 80%;
+    }
+}
+
+
+
